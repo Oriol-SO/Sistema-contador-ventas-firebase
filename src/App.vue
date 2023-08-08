@@ -13,27 +13,24 @@
 
       <v-btn
         text
+        to="/"
       >
-        <span class="mr-2">INICIO</span>
+        <span class="mr-2" >INICIO</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <iniciopage />
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import iniciopage from './components/inicio.vue';
+//import iniciopage from './components/inicio.vue';
 
 export default {
   name: 'App',
-
-  components: {
-    iniciopage,
-  },
 
   data: () => ({
     //

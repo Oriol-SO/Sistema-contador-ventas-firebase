@@ -5,6 +5,9 @@
             <v-card-title>
                 Registros recientes
             </v-card-title>
+            <v-card-title>
+                <v-btn class="ml-auto" color="warning" to="/historial">HISTORIAL</v-btn>
+            </v-card-title>
             <v-row>
                 <v-col cols="12" sm="4">
                     <v-card>
@@ -44,7 +47,7 @@
                         >
                             <template v-slot:[`item.fecha`]="{ item }">
                                 <v-chip
-                                    color="warning"
+                                    color="primary"
                                     dark
                                 >
                                 {{ get_fecha(item.fecha) }}
@@ -54,7 +57,6 @@
                     </v-card-text>
                 </v-col>
             </v-row>
-      
         </v-card>
     </div>
 </template>
