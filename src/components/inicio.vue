@@ -115,7 +115,6 @@ export default{
             if (docSnapshot.exists()) {
                 const datosDelDocumento = docSnapshot.data();
                 this.registros=datosDelDocumento.registros;
-                console.log('Datos actualizados del documento:', datosDelDocumento);
             } else {
                 console.log('El documento ya no existe');
             }
