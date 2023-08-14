@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import Home from '@/components/inicio.vue'
 import Historial from '@/components/historial.vue' 
 Vue.config.productionTip = false
+Vue.config.devtools=false
 Vue.use(VueRouter)
 
 const routes = [
